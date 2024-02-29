@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Título del Documento</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+</head>
+
+<body>
+    <!-- <header>
+    </header> -->
+
+    <main class="container">
+        <p>Animación con svg bastante compleja, y dificíl de implementar en nuestro entorno.</p>
+        <div class="buttons-container">
+            <button class="button-1">
+                <div class="trash">
+                    <div class="top">
+                        <div class="paper"></div>
+                    </div>
+                    <div class="box"></div>
+                    <div class="check">
+                        <svg viewBox="0 0 8 6">
+                            <polyline points="1 3.4 2.71428571 5 7 1"></polyline>
+                        </svg>
+                    </div>
+                </div>
+                <span>Delete Item</span>
+            </button>
+
+            <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                <path class="line top"
+                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                <path class="line middle" d="m 30,50 h 40" />
+                <path class="line bottom"
+                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+            </svg>
+        </div>
+        <p>Estas están hechas con css y js y son mas viables en nuestro entorno.</p>
+        <div class="buttons-container">
+            <a href="#" class="menu-btn"></a>
+            <label class="menu">
+                <input type="checkbox" checked />
+                <div>
+                    <span></span>
+                    <span></span>
+                </div>
+            </label>
+        </div>
+            <h2>Lottie animations</h2>
+            <p>Se pueden crear con after effects y exportar como un json y pesan poco. Permite interacciones de click, hover, scroll.</p>
+        </div>
+        <div class="lottie-container">
+            <div id="lottie-animation" class="lottie-animation"></div>
+            <lottie-player id="dark-mode-animation" class="lottie-animation" src="/assets/dark-mode-animation.json" style="width:200px; height: 200px;">
+            </lottie-player>
+        </div>
+        
+        <div id="scroll" class="buttons-container">
+            <lottie-player id="scroll-animation" class="lottie-animation" src="/assets/scroll-animation.json" style="width:200px; height: 200px;">
+            </lottie-player>
+        </div>
+        
+    </main>
+    <!-- <footer>
+    </footer> -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@1/dist/lottie-player.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Importación de Popper.js (opcional, para Bootstrap) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <!-- Importación de Bootstrap JS (opcional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Importación de Scripts Personalizados -->
+    <script src="script.js"></script>
+</body>
+
+</html>
