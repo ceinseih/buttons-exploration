@@ -504,6 +504,27 @@ body {
         align-items: center;
     }
 
+    .buttons-container {
+        gap: 4em;
+        margin-bottom: 4em;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .twitter {
+        position: fixed;
+        display: block;
+        right: 16px;
+        bottom: 16px;
+
+        svg {
+            width: 32px;
+            height: 32px;
+            fill: #1da1f2;
+        }
+    }
+
     #scroll-animation {
         max-width: 400px;
     }

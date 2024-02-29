@@ -429,6 +429,24 @@ body .lottie-container {
   display: flex;
   align-items: center;
 }
+body .buttons-container {
+  gap: 4em;
+  margin-bottom: 4em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+body .twitter {
+  position: fixed;
+  display: block;
+  right: 16px;
+  bottom: 16px;
+}
+body .twitter svg {
+  width: 32px;
+  height: 32px;
+  fill: #1da1f2;
+}
 body #scroll-animation {
   max-width: 400px;
 }
