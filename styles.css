@@ -429,6 +429,9 @@ body .lottie-container {
   display: flex;
   align-items: center;
 }
+body #scroll-animation {
+  max-width: 400px;
+}
 body .buttons-container {
   gap: 4em;
   margin-bottom: 4em;
